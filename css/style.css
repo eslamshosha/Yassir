@@ -70,7 +70,7 @@ header {
   color: var(--main-hover);
 }
 .nav-header li {
-  margin-inline-end: 28px;
+  margin-inline-end: 20px;
 }
 .nav-header li:last-of-type {
   margin-inline-end: 0;
@@ -86,7 +86,7 @@ header {
   margin: 0;
 }
 .nav-header figure img {
-  width: 100%;
+  width: 230px;
 }
 .nav-head {
   height: 38px;
@@ -96,6 +96,16 @@ header {
   justify-content: space-between;
   padding: 0 15px;
 }
+.open-bars::after {
+  content: "";
+  font-family: "line Awesome Free";
+  font-weight: 900;
+}
+.close-bars::after {
+  content: "";
+  font-family: "line Awesome Free";
+  font-weight: 900;
+}
 /*                          header section                     */
 /*                           big-banner section                          */
 .big-banner-section {
@@ -103,7 +113,7 @@ header {
 }
 .big-banner-cont {
   overflow: hidden;
-  display: inline-block;
+  display: flex;
   position: relative;
   width: 100%;
 }
@@ -187,18 +197,18 @@ header {
   background-color: #f4f5f9;
   -webkit-box-shadow: none;
   box-shadow: none;
-  outline: 1px solid #f4f5f9;
+  outline: 2px solid #f4f5f9;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 .register-cont input:focus {
   background-color: #f2f2f2;
-  outline: 1px solid var(--main-hover);
+  outline: 2px solid var(--main-hover);
 }
 .register-cont label {
   text-align: start;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 700;
   padding: 0;
   margin: 0 25px 15px 0;
   color: var(--sec-color);
@@ -272,11 +282,11 @@ html[dir="ltr"]
 }
 
 .select2-container .select2-selection--single .select2-selection__arrow::after {
-  content: "\f078";
-  font-size: 13px;
-  font-family: "Font Awesome 5 Free";
+  content: "";
+  font-size: 14px;
+  font-family: "line Awesome Free";
   font-weight: 900;
-  color: #ababab;
+  color: #808080;
 }
 
 .select2-container .select2-selection--single .select2-selection__arrow b {
@@ -394,7 +404,7 @@ html[dir="ltr"]
 .select2-container .select2-results__option {
   text-align: start;
   color: #999999;
-  font-size: 16px;
+  font-size: 14px;
   background-color: transparent;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -418,10 +428,10 @@ html[dir="ltr"]
   border-bottom-color: transparent;
 }
 .select2-container--open .select2-selection.select2-selection--single {
-  border: 1px solid var(--main-hover);
+  border: 2px solid var(--main-hover);
 }
 .select2-container.select2-container--open .select2-dropdown--below {
-  border: 1px solid var(--main-hover);
+  border: 2px solid var(--main-hover);
   border-top: 0;
   border-radius: 22.5px;
   padding-bottom: 10px;
@@ -453,14 +463,15 @@ html[dir="ltr"]
   .select2-search--dropdown
   .select2-search__field:focus-visible {
   border: none;
-  outline: 1px solid var(--main-hover);
+  outline: 2px solid var(--main-hover);
 }
 .form-pargh {
   font-weight: 300;
   font-size: 14px;
   color: #999999;
   text-align: start;
-  margin-bottom: 12px;
+  padding: 0 25px;
+  margin-bottom: 5px;
 }
 .submit-btn {
   position: relative;
@@ -507,6 +518,7 @@ html[dir="ltr"]
   z-index: 2;
 }
 .submit-btn::after{
+  cursor: pointer;
   position: absolute;
   content: "";
   top: 0;
@@ -524,6 +536,9 @@ html[dir="ltr"]
   visibility: visible;
   opacity: 1;
 }
+.form-head br{
+  display: none;
+}
 @media (max-width: 991px) {
   .form-head{
     font-size: 24px;
@@ -532,6 +547,9 @@ html[dir="ltr"]
   }
   .form-cont{
     margin-bottom: 70px;
+  }
+  .form-head br{
+    display: block;
   }
 }
 /*                              form-section                             */
@@ -545,7 +563,7 @@ html[dir="ltr"]
   font-size: 30px;
   color: var(--main-color);
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 }
 .category-cont {
   display: grid;
@@ -570,7 +588,7 @@ html[dir="ltr"]
 }
 .category-img {
   overflow: hidden;
-  padding-top: 80%;
+  padding-top: 62%;
   position: relative;
   margin-bottom: 2px;
   width: 100%;
@@ -630,6 +648,9 @@ footer a {
   margin-bottom: 25px;
 }
 .pay-inline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   margin-bottom: 18px;
 }
@@ -650,6 +671,9 @@ footer a {
   font-weight: 300;
   color: #92adec;
 }
+.copy-right br{
+  display: none;
+}
 /*                                   footer                            */
 /*whats-link*/
 .whats-link{
@@ -661,8 +685,8 @@ footer a {
   justify-content: center;
   align-items: center;
   position: fixed;
-  right: 20px;
-  bottom: 20px;
+  right: 10px;
+  bottom: 10px;
 }
 .whats-link img{
   max-width: 100%;
@@ -677,8 +701,8 @@ footer a {
   .show-icons {
     display: block;
   }
-  .nav-header figure {
-    width: 55%;
+  .nav-header figure img{
+    width: 172px;
   }
   .nav-header {
     padding: 10px 0;
@@ -686,7 +710,7 @@ footer a {
   .menu-bars {
     display: flex;
     align-items: center;
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 700;
     color: var(--main-color);
     transition: all 0.3s ease-in-out;
@@ -694,17 +718,21 @@ footer a {
   .menu-bars:hover {
     color: var(--main-hover);
   }
+  .nav-head .close-btn {
+    color: #fff;
+    font-size: 24px;
+  }
   .navgition {
     display: block;
     position: fixed;
     padding: 30px 15px;
     padding-top: 0;
     left: -200%;
-    top: 0;
+    top: -200%;
     bottom: 0;
-    width: 260px;
+    width: 100%;
     height: 100%;
-    background-color: #fff;
+    background-color: rgba(33, 66, 144, .95);
     transition: 0.4s;
     z-index: 200;
     overflow-y: auto;
@@ -716,6 +744,7 @@ footer a {
   }
   .reset-left {
     left: 0;
+    top: 0;
   }
   html[dir="rtl"] .reset-left {
     right: 0;
@@ -725,7 +754,7 @@ footer a {
     height: auto;
     width: 100%;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 27px 20px;
   }
   .nav-head .first-head {
@@ -756,7 +785,11 @@ footer a {
   }
   .nav-header li a {
     display: flex;
+    justify-content: center;
     align-items: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
   }
   /*                    menu in phone size                      */
   footer{
@@ -771,6 +804,9 @@ footer a {
   .nav-foot li {
     margin: 0;
     margin-bottom: 10px;
+  }
+  .copy-right br{
+    display: block;
   }
 }
 /*                                    media query                                    */

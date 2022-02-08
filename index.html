@@ -7,6 +7,7 @@
     <title>yassir</title>
     <link rel="icon" href="images/fav.png" type="image/png" />
     <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/line-awesome.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/bootstrap-rtl.min.css" />
     <link rel="stylesheet" href="css/fonts.css" />
@@ -22,13 +23,13 @@
         <div class="container">
           <div class="nav-header">
             <figure class="img-logo">
-              <a href="#"><img src="images/logo.png" class="img-fluid" /></a>
+              <a href="#"><img src="images/logo.svg" class="img-fluid" /></a>
             </figure>
             <div class="navgition">
               <div class="nav-head">
-                <figure><img src="images/logo.png" alt="img-logo" /></figure>
+                <!-- <figure><img src="images/logo.svg" alt="img-logo" /></figure> -->
                 <a class="fixall close-btn">
-                  <i class="fas fa-times"></i>
+                    <i class="las la-times"></i>
                 </a>
               </div>
               <ul class="big-menu list-unstyled">
@@ -54,9 +55,12 @@
             </div>
             <div class="show-icons">
               <a class="menu-bars fixall" id="menu-id" href="#!">
-                <i class="fas fa-bars"></i>
+                <span class="bars open-bars"></span>
               </a>
             </div>
+            <!-- overlay -->
+          <div class="overlay-box"></div>
+          <!-- overlay -->
           </div>
         </div>
       </div>
@@ -78,7 +82,7 @@
     <section class="formsection">
       <div class="container">
         <div class="form-cont">
-          <h2 class="form-head">خلك مرتاح، عطنا جوالك وحنا بنتصل</h2>
+          <h2 class="form-head">خلك مرتاح، عطنا جوالك <br/>وحنا بنتصل</h2>
           <form class="register-form">
             <div class="register-cont">
               <input type="text" placeholder="05xxxxxx" />
@@ -223,7 +227,7 @@
                 <img src="images/pay-img.png" class="img-fluid pay-img"/>
               </figure>
             <div class="copy-right">
-                © مؤسسة تسوق الرقمي لتقنية المعلومات 2022. جميع الحقوق محفوظة
+                © مؤسسة تسوق الرقمي لتقنية المعلومات 2022. <br />جميع الحقوق محفوظة
             </div>
           </div>
         </div>
@@ -233,9 +237,7 @@
     <a href="#" class="whats-link">
         <img src="images/icons-whatsapp.svg" />
     </a>
-    <!-- overlay -->
-    <div class="overlay-box"></div>
-    <!-- overlay -->
+    
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/select2.min.js"></script>
