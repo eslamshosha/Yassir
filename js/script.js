@@ -7,6 +7,7 @@ $(document).ready(function() {
            e.preventDefault()
            $(".overlay-box").fadeToggle(300);
            $(".navgition").toggleClass("reset-left");
+           $(".menu-bars .bars").toggleClass("open-bars");
            $("body").toggleClass("overflow");
        });
        $(".nav-head .close-btn, .overlay-box").click(function () {
